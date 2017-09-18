@@ -5,7 +5,7 @@
 
 <?php
 try {
-    $dbh = new PDO("mysql:host=127.0.0.1:3306;dbname=board","root","",array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
+    $dbh = new PDO("mysql:host=127.0.0.1:3306;dbname="","pwd","",array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
     //print_r($dbh);
     $dbh->beginTransaction();
     $dbh->exec('delete from users where username="smith"');
