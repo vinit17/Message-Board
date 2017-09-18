@@ -5,8 +5,8 @@
 session_start();
 
 $host='127.0.0.1:3306';
-$db = 'board';
-$user = 'root';
+$db = '';
+$user = '';
 $pwd = '';
 
 $obj =  'mysql:host='.$host.';dbname='.$db;
